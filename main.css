@@ -1,0 +1,38 @@
+#pageTitle {
+    font-size: 3em;
+    color: brown;
+    text-align: center;
+}
+
+
+nav>div {
+    color: white;
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    background-color: blue
+}
+
+.Item>div {
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid black
+}
+
+
+article:hover {
+    background-color: yellow;
+}
+
+
+a:hover {
+    color: red;
+}
+
+a:active [
+
+]
