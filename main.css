@@ -2,25 +2,89 @@
     font-size: 3em;
     color: brown;
     text-align: center;
+    /* width: %; */
+    padding: 0;
+    margin: 0;
+    
+}
+
+header {
+       background-color: aliceblue;
+       display: flex;
+       flex-direction: row; 
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       padding-top: 50px;
+       border: 2px solid green; 
 }
 
 
-nav>div {
-    color: white;
-    width: 33%;
-    display: inline-block;
-    text-align: center;
-    background-color: blue
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    flex-wrap: wrap;
+    /* min-width: 500px; */
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 20px;
+    
 }
 
-.Item>div {
-    display: inline-block;
-    text-align: center;
-    font-size: 2em;
-    vertical-align: middle;
+#star {
+    width:  120px ;
+    height: 100px;
+    /* border: 2px solid red; */
+    margin-right: 20px;
+    flex-shrink: 0;
+    
+}
+
+#star2 {
+    width: 120px ;
+    height: 100px;
     margin-left: 20px;
-    margin-top: 20px;
-    border: 1px solid black
+    /* border: 2px solid red; */
+    flex-shrink: 0;
+    
+}
+
+nav>a {
+    color: white;
+    /* flex: 0 0 230px; */ 
+    flex-basis: 200px;
+    text-align: center; 
+    background-color: blue;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    
+}
+
+
+
+.likedText {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-left: 50px;
+    border: 1px dashed black;
+    font-size: 1.5rem;
+    /* text-align: center; */
+    flex-basis: 80%;
+
+}
+
+.likedText>h1 {
+    font-size: 2rem;
+    font-style: oblique;
+    font-weight: 900;
 }
 
 
@@ -33,6 +97,21 @@ a:hover {
     color: red;
 }
 
-a:active [
+.Item {
+    flex-direction: row;
+    display: flex; 
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 10px auto;
+    border: 2px solid black;
+    max-width: 1200px;
+    align-content: center;
+}
 
-]
+@media (max-width: 1250px) {
+    #star, #star2 {
+        display: none;
+    }
+}
+
+
